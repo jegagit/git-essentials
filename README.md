@@ -76,3 +76,42 @@ $decryptedText = Decrypt-String -encryptedString $encryptedText
 Write-Host "Original Text: $plainText"
 Write-Host "Encrypted Text: $encryptedText"
 Write-Host "Decrypted Text: $decryptedText"
+
+
+===================================
+#public key is in OpenSSH format (begins with something like 'ssh-rsa', 'ssh-dss', etc.), you can use the load_ssh_public_key method. 
+from cryptography.hazmat.primitives.serialization import load_ssh_public_key
+from cryptography.hazmat.primitives import serialization
+from cryptography.hazmat.backends import default_backend
+
+def get_ssh_public_key_fingerprint(public_key_str):
+    try:
+        # Load the public key from the string
+        public_key = load_ssh_public_key(public_key_str.encode(), backend=default_backend())
+
+        # Serialize the public key to bytes
+        public_bytes = public_key.public_bytes(
+            encoding=serialization.Encoding.OpenSSH,
+            format=serialization.PublicFormat.OpenSSH
+        )
+
+        # Calculate the fingerprint
+        fingerprint_bytes = hashlib.md5(public_bytes).digest()
+
+        # Convert the fingerprint to a hexadecimal string
+        fingerprint_hex = ':'.join(format(b, '02x') for b in fingerprint_bytes)
+        return fingerprint_hex
+
+    except ValueError as e:
+        # Handle the case where the string is not a valid public key
+        print(f"Error parsing public key: {str(e)}")
+        return None
+
+# Your public key string here; it should be a single line and start with 'ssh-rsa', 'ssh-dss', etc.
+public_key_str = """ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC..."""
+
+fingerprint = get_ssh_public_key_fingerprint(public_key_str)
+if fingerprint:
+    print(f'Fingerprint: {fingerprint}')
+else:
+    print('Failed to generate fingerprint.')
