@@ -115,3 +115,29 @@ if fingerprint:
     print(f'Fingerprint: {fingerprint}')
 else:
     print('Failed to generate fingerprint.')
+
+=============================
+#!/bin/bash
+
+# Path to the authorized_keys file
+AUTHORIZED_KEYS_FILE="/path/to/authorized_keys"
+
+# Temporary file for individual keys
+TEMP_KEY_FILE=$(mktemp)
+
+# Ensure the temporary file is deleted upon script exit
+trap "rm -f $TEMP_KEY_FILE" EXIT
+
+# Read the authorized_keys file line by line
+while IFS= read -r line; do
+    # Skip empty lines or comments
+    if [[ "$line" =~ ^$ ]] || [[ "$line" =~ ^# ]]; then
+        continue
+    fi
+
+    # Write the key to the temporary file
+    echo "$line" > "$TEMP_KEY_FILE"
+
+    # Get the fingerprint using ssh-keygen
+    ssh-keygen -l -f "$TEMP_KEY_FILE"
+done < "$AUTHORIZED_KEYS_FILE"
