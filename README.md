@@ -144,8 +144,6 @@ done < "$AUTHORIZED_KEYS_FILE"
 
 
 
-The  platform migration to RHEL8 included updating to the latest Quantz library and Tibco versions, adapting to gcc 10.3, and transitioning Python scripts to version 3.10. Perl scripts were overhauled to use RHEL8's newer libraries. The migration also enhanced the GUI for Tibco 8.6.1 support, improved the testing suite for robust data backtesting, addressed security concerns with SSH keys, and streamlined processes by removing redundant elements and unnecessary Unix groups, leading to a more secure, efficient, and up-to-date system.
-
 
 
 
