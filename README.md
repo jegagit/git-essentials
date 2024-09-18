@@ -1,5 +1,58 @@
 
 from reportlab.pdfgen import canvas
+from reportlab.graphics.shapes import Drawing
+from reportlab.graphics.barcode import qr
+from reportlab.lib.units import mm
+from reportlab.lib.colors import black, gray
+
+# Function to create a "3D" QR code effect directly in the PDF using ReportLab
+def draw_3d_qr_code(pdf, qr_code_data, x, y, size):
+    # Create the QR code
+    qr_code = qr.QrCodeWidget(qr_code_data)
+    
+    # Set QR code size
+    bounds = qr_code.getBounds()
+    width = bounds[2] - bounds[0]
+    height = bounds[3] - bounds[1]
+    
+    # Scale the QR code to the desired size
+    d = Drawing(size, size, transform=[size/width,0,0,size/height,0,0])
+    d.add(qr_code)
+    
+    # Draw shadow for 3D effect by shifting the QR code slightly
+    shadow_offset = 2 * mm
+    d_shadow = Drawing(size, size, transform=[size/width,0,0,size/height,shadow_offset, -shadow_offset])
+    d_shadow.add(qr_code)
+    
+    # Draw the shadow first (in gray)
+    pdf.setFillColor(gray)
+    d_shadow.drawOn(pdf, x, y)
+    
+    # Draw the main QR code (in black) on top of the shadow
+    pdf.setFillColor(black)
+    d.drawOn(pdf, x, y)
+
+# Define the text with 3000 characters
+qr_code_data = "This is an example of a long text " * 75  # 3000 characters in total
+
+# Create a PDF canvas
+pdf_filename = "3d_qr_code_reportlab.pdf"
+pdf = canvas.Canvas(pdf_filename)
+
+# Define the position and size of the QR code in the PDF
+qr_x = 50 * mm
+qr_y = 150 * mm
+qr_size = 80 * mm  # This sets both the width and height of the QR code
+
+# Draw the 3D QR code on the PDF
+draw_3d_qr_code(pdf, qr_code_data, qr_x, qr_y, qr_size)
+
+# Save the PDF
+pdf.save()
+
+print(f"3D QR code saved to {pdf_filename}")
+
+from reportlab.pdfgen import canvas
 from reportlab.graphics.barcode import code128
 from reportlab.lib.units import mm
 from reportlab.lib.colors import black, gray
