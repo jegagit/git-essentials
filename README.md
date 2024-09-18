@@ -1,3 +1,41 @@
+
+from reportlab.pdfgen import canvas
+from reportlab.graphics.barcode import code128
+from reportlab.lib.units import mm
+from reportlab.lib.colors import black, gray
+
+def draw_3d_barcode(pdf, barcode_text, x, y, width, height):
+    # Generate the barcode
+    barcode = code128.Code128(barcode_text, barWidth=width / 100.0, barHeight=height)
+    
+    # Create a "shadow" to mimic 3D by drawing the barcode slightly offset
+    shadow_offset = 1 * mm
+    barcode.drawOn(pdf, x + shadow_offset, y - shadow_offset)
+    
+    # Draw the main barcode in black
+    pdf.setFillColor(black)
+    barcode.drawOn(pdf, x, y)
+
+# Create PDF canvas
+pdf_filename = "3d_barcode.pdf"
+pdf = canvas.Canvas(pdf_filename)
+
+# Define barcode parameters
+barcode_text = "3D1234567890"
+barcode_x = 50 * mm
+barcode_y = 150 * mm
+barcode_width = 40 * mm
+barcode_height = 20 * mm
+
+# Set shadow color
+pdf.setFillColor(gray)
+draw_3d_barcode(pdf, barcode_text, barcode_x, barcode_y, barcode_width, barcode_height)
+
+# Save the PDF
+pdf.save()
+
+print(f"3D barcode saved to {pdf_filename}")
+
 # git-essentials
 #!/bin/ksh
 
