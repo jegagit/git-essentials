@@ -1,240 +1,40 @@
 
-from reportlab.pdfgen import canvas
-from reportlab.graphics.shapes import Drawing
-from reportlab.graphics.barcode import qr
-from reportlab.lib.units import mm
-from reportlab.lib.colors import black, gray
+NotebookLM Logo
+Trade System Workflows and Solutions
+PRO
+Sources
+Chat
+Studio
+Trade - Tuesday at 11_47 AM.pdf
+Source guide
+Speaker 1 00:00 Asia, Speaker 2 00:00 Yeah, so that's when it's like, even if we could. This is not a marketed solution, right, and also Speaker 1 00:06 Like scws, so never mind. Speaker 2 00:10 So, yeah, it's kind of a mood point. So, what I want to stick to is like, what is being done now, and what it's been used to working, and what that flow means. And okay, so say, for example, we call the Bloomberg chart right now. Yeah, Speaker 1 00:22 Say we priced it. We have negotiated. We have a done deal, right? What Speaker 2 00:26 Is the Speaker 1 00:27 Avenue to get it into email stuff? Is it manual? Like 99 Speaker 2 00:33 Out of 100 times at the market wage right now. No, no. And even if the client, even though if they let's say they negotiated, uh? Even though sometimes they negotiate in chat or whatever, and they sometimes want to simplify them, they want to go through trade web, so we will ask them to hit our, you know, our game often increase it. Speaker 1 00:56 It's very Japanese thing, I guess, you know, I don't Speaker 3 00:59 Care. Speaker 2 01:00 Yeah, Speaker 3 01:02 Or it begins with the voice, then becomes Speaker 2 01:05 Yeah, custom retreat. Yeah, because they don't have to be, Speaker 4 01:10 But they Speaker 3 01:11
+Won't have a product. And you know? Speaker 2 01:25 Oh, it begins in a voice, and conversely, electronica. Speaker 4 01:29 So, there is like a small, small percentage, Speaker 2 01:31 Okay, but we don't Speaker 3 01:32 Have to even capture that Speaker 4 01:33 Then. And Speaker 2 01:35 Yeah, the time that takes to book it tomorrow, or because in trading, it's easy, right? They say, oh, this is, yeah. See, this is, this is exactly the cause. The problem, Speaker 4 01:58 The trader, accepted it without really thinking, and then that possible. So, but normally when you're chatting, we were The Voice and you have Speaker 1 02:05 Decided it. Won't you just go buy a market buy? Are you going by a trade web as well. Speaker 2 02:10 Great question, it. It simplifies the booking workflow. Right? So, it's easy to just go punch a button, right? And say, I want to do 10-year-old it's over templates. Speaker 3 02:22 So, the go e the market where our as no purpose or sales doesn't have to do anything. Yeah, because all setup Speaker 2 02:29 Right, if you're saying this score doesn't wouldn't Speaker 3 02:31 Take. Speaker 2 02:32 Yeah, they don't need to book the whole thing in Marketplace. I mean, you can still have send a drop copy to Market. Why
+Speaker 3 02:36 Now, we'll get to that part? Okay, can I Speaker 1 02:39 Ask one stupid question before that, so Market file shops are the same? Speaker 2 02:43 Ah, sorry, yeah, yeah. Anyways, it's a tool. It's also venue, so it's interchangeable use. It's an application. Yeah, Speaker 3 02:56 But the difference in saying that they don't exist together? Speaker 2 03:01 Forget the name change. Yeah, I, Speaker 1 03:05 I'm pretty sure we're gonna competition at the end of the session anyway, so Speaker 2 03:07 You don't have to already start Speaker 1 03:09 As a drawing. Flowcharts don't confuse me Speaker 2 03:12 So, so I think originally when they started it was called a swap where, um? 90s, and then between 2000s, they changed. Speaker 3 03:39 So, uh, Speaker 2 03:40 But they are smart that they still keep using the name Market. Why? Because that's the most, uh, correct? Now being direct products, so they, even when they're talking to customers well email address and stuff. A lot of those client relationship and everything has changed support, still use market serve. That wasn't, ah, yeah, you remember that, yeah, supported marketeer.com, right? Not much why it used to be Speaker 3 04:05 Okay, no more. Speaker 2 04:09 Swaps Wyatts monkey to posture. Posture is an acquisition, so look at Speaker 4 04:15 It. Ruin, that pool isn't that happen. For whisper, the trade was done as a voice and went. Ah,
+did you drink? Yeah, the Speaker 3 04:27 Product doesn't exist in Speaker 4 04:28 The client, mistakenly got there. Speaker 3 04:30 Oh, then, we Speaker 1 04:34 Would be able to catch. Yeah, Speaker 4 04:34 This part is exactly if it's Speaker 2 04:36 Not, it's done. They're not going to venture. Speaker 3 04:39 No monaster doesn't matter. So Speaker 2 04:42 It is all about counterparty preference, right? Some counterparties. If you want to trade with ABC, that's it. I mean, it's cool. Warned, right? It's not because maybe? Okay, Speaker 3 05:02 Somebody can give the time. Come to us, we already know it. They come for ISDA. Speaker 2 05:06 Yeah, yeah, kind of stuff that'll already work. That's like a trading thing. They kind of know, but every once in a blue moon, they end up booking something that is not supported, right? Yeah, Speaker 3 05:23 But let's Speaker 2 05:24 Let's just say you code for something that's not existing in true. The moment you go to tradebook, you already see that you cannot trade, right? So then you have to fail fall back, right? Speaker 3 05:32 So 99 percent e becomes sorry, V becomes e, then. And Speaker 2 05:37 The only. It's very few percentage sometimes because. Some clients just want the convenience.
+I, I am not able to give you statistics on what's the Speaker 3 05:46 Difference still Speaker 2 05:50 Existed, of course, very much, yeah. Speaker 1 05:52 So, um, following up on my swap Squire question, right? So, because when we were spying about, like, the live population in the master on a day-to-day basis. We see some coming, some deals getting stamped with the originator references whatsoever somewhere smart market wire. Speaker 2 06:13 Last year, because Speaker 3 06:13 No, Speaker 1 06:14 Okay, so, Speaker 2 06:15 So trade tradeskin trade skin traits should always. Wires. What's I've written? Swap 20 lint? Speaker 1 06:25 Yes, so I'm sorry. Speaker 2 06:28 So, that's the only three valid stairs. As of now. Speaker 1 06:34 No, but if it's any, uh, introducing, and then maybe some moments done, perhaps? Yeah, so it's Speaker 2 06:43 Very old, right? So we'll talk about some of the stuff that goes as trade web, and then that will later change to markup originator. And that's for good reason. Um. So it is on the second stage. Okay, so for the context of voice, uh, trade can only have. Two originators. Right. If it's coming from Market wire, yes, it's Speaker 1 07:11 Always Speaker 2 07:11 Going to be, and it's bilateral. Yes, it will always be originated. Software version zero swaps. Why now, the outside chance that we talked about that somebody use a trademap? In that case, the zero version? Trade web and from version. It will be marketable because it will link to the market ID. And I will get to it in the E channel in full, right? But I think for now,
+Speaker 1 07:39 So effectively voice cool. Then they will initiate the booking via Market wire because it has less than amount of fields. I guess to fill them remaster absolutely, and um remaster, but in Market wire screen itself, we will put whether it's an lch cloud or a bilateral 100 Speaker 2 07:59 Right. Yes, if you're gonna CCP clear or like, oh yeah, Speaker 3 08:03 Right, Speaker 1 08:03 Keep it General. Speaker 2 08:11 That is not yeah, so you will book it. After the pricing is done. And if you, if you, if you decide to stay bilateral, I mean, all that's passing in Asia, by the way, in the U.S, not a choice. Some of it's matter trickling, Speaker 1 08:24 Yeah, so? Speaker 2 08:27 You can be like, oh, I'm a climber. Yeah, no, or I'm going to do this biling clue. Sure. Any price not possible Speaker 1 08:33 Because of your family. Speaker 2 08:34 Yeah, my friend here cannot do it. So, Emir all of that make sure that, yeah, anyway. So, in, in Asia, you can be a counterparty on a ceph, where it's mandatory clearing, and it can be the same kind of party. You can go OTC or to broker. Or, and you can do bilateral for whatever reason. You can do multiple clearing houses, right? You can do JPY swaps LC scheduling or JCC, or that's possible, so different pricing based on, you know? Talked about the xvs UVA part, which is Speaker 1 09:07 That one, I know, yeah. Yeah, Speaker 2 09:10 So it's all margins. And Speaker 1 09:11 Yeah, what you Speaker 2 09:12
+Want to pay Speaker 1 09:12 Based on your like standards, Speaker 2 09:15 And then Speaker 1 09:15 The funding transfer charge. Yeah, so yeah, Speaker 2 09:18 It's all what the client wants to do, right? We're just Market making. Speaker 1 09:21 Okay, so, um? Voice is pretty kind of clear right at this point for voice at any point. Is anyone using Eagle IR at this point? Yeah, Speaker 2 09:31 So yes, so Speaker 1 09:33 Because we just try to get all the originators first. Yes, Speaker 2 09:37 They try to understand Speaker 1 09:38 The Speaker 3 09:39 Winter system, or um, Speaker 1 09:40 Dead system, right? We don't want to Market Speaker 2 09:43 It. Speaker 1 09:44 Yeah, we don't want people to use it. Anyone? We want to Speaker 3 09:46 Use version of Concord, oh, Speaker 2 09:48 Okay, C sharp. Yeah, not bad, actually.
+Right? Nobody books in the master, which is impossible. They are Speaker 1 10:02 Planning screens, Speaker 2 10:03 The booking illegal. Speaker 1 10:04 Ah, so eagle is also making it flow into vmaster, Marketwise also, making flow into the master. So we must basically just destination. No one's actually opening a Wee Master screen anymore to commend, yeah, but Speaker 2 10:17 No one's booking it unless your structure Speaker 1 10:19 Origin, not why we Speaker 3 10:21 Must slightly. My Speaker 2 10:25 Son approves an eagle, so sales who drafted send it to my son, okay? Speaker 3 10:36 To the Vienna City, Nina is just kind of like, remaster, yeah, it's there. But if you use the CTC UI and to do most of Speaker 2 10:44 The stuff, okay? Speaker 1 10:46 Why would they use? What is the case that they would use Eagle IR instead of Market wire so? Speaker 2 10:53 You see the beauty of marketware and the problem with Market War is likely to bilateral system, right? So as long as? Participant easy Market why you can use it, hedge funds, Etc. They don't want to pay modifier charges, huge fees. Every trade. Speaker 1 11:07 So, basically, Market wire needs participation from both our end, as well as counterpart, the end to be able to like, do a quicker STP or a quicker workflow, but in Speaker 3 11:16 Case you're Speaker 1 11:17
+Not on boarded or not, a member of Market wire, you have to use a different challenge. Yeah, it's a Speaker 2 11:23 Paper trade, right? A Speaker 1 11:24 Lot of paper trade kind of. Yeah, we have Speaker 2 11:25 To send a confirmation. Yeah, yeah. There is provision in Market wire to do single-sided party, which means the actual party doesn't exist. Not everybody's happy to do it. Speaker 1 11:39 That is a lot of like gray area. Yeah. So, I don't think we would do that Speaker 2 11:44 We actually do for some clients. Like, be? Talk. Like the one the future. Do you have some single side flows to use it? But Speaker 3 12:04 He's only come to our bank, right? It won't go. Speaker 2 12:06 Yeah, it won't go to them, they won't. They're booking their side, the reasons why they use they got banner, London flow, and all that, Speaker 3 12:13 Um, using that I love to send to something. So, Speaker 2 12:17 So it simplifies our booking flow, right? Speaker 3 12:20 Okay, so Speaker 4 12:22 We Speaker 2 12:22 Are. Speaker 1 12:22 But then, how does the confirmation dock management settlement? All of that means like granulas, and right,
+Speaker 2 12:30 Yeah, regardless. Regardless, if, however, the trade? Gds, and it goes to ask an Arsenal. Which is where the confirmations get sent out from so? Speaker 1 12:50 What is your dot management system? Speaker 2 12:54 It is technically its ideas is where, but it's an Arsenal and ask, but I think everybody uses asking Arsenal. It's just I think all of bank, he's just asking Arsenal. As well, right? Speaker 3 13:08 I'm Speaker 2 13:09 Pretty sure Speaker 3 13:09 I don't know about that. Part is like, SDA, is it? Yeah, Speaker 2 13:12 These are Legacy Bank, Speaker 3 13:13 Oh, not SDI not like that. Speaker 2 13:16 No, Speaker 3 13:16 Like, documentation, document? Speaker 2 13:17 No, no, this information. Speaker 1 13:20 What is, Speaker 2 13:22 Yeah? So, so, no, no, this is a good question, so they're all the same system. Different names, oh, different parts. Speaker 1 13:30 Calling it different things, is it Speaker 2 13:31
+Because of the migrations that has happened so ideas? So, if you hear the name ideas drawn? Yeah, we're just old, right? I'm asking you. Uh, it is at some point at some system. Some flows, some products supported here there, Speaker 1 13:57 But Speaker 2 13:58 In general. I think now it's all QC docs, right? Speaker 1 14:01 So Speaker 2 14:02 That's like an oversimplified way of saying easy docs is good. Speaker 3 14:08 You put I here. Everything else is a. Speaker 2 14:11 I think ideas is mirror. That's why the other step will be aware there you go. Got it. Yeah, but drum drunk or drum is not yeah, drum was. Speaker 1 14:23 You could create some pattern what is going on. Yeah, Speaker 2 14:26 And then you get all the answers. Yes, yes. Speaker 1 14:35 Okay, so. Marketwire Eagle IR um, we master yes for, uh, swap related booking? Or is that only for options Speaker 2 14:46 So Concord in here, like, excluding exotic conversation, like for the linear, and um? Um, the Concord is only used for a dollar, and that's it. Speaker 1 14:59 Why cannot why we cannot use, like, Market wire or Eagle, Speaker 2 15:03 And need to Speaker 1 15:05 Go for college? I'm just trying to understand why there are so many things. This is a great
+Speaker 2 15:09 Question. Okay, because this is the million dollar question, which is actually literally million Speaker 4 15:13 Dollars. That three, Speaker 3 15:14 Three articles for the same reason. So, so, Speaker 2 15:17 So jnapp and guys originally wrote it, right, Concord, because? Be able to price. I mean, there's a whole dependency on odr that the trade needs to be mastered to be able to price, and the dollar business was too huge for business that we cannot wait for your stuff to be in system. I price, but this is before. There was a whole Speaker 1 15:42 Priority and interdu risk, right? Yeah, Speaker 2 15:45 This is a long time ago. This is 10 years ago, like to Speaker 3 15:47 Convert the dollar swap spreadsheets into a system, right? Yeah, Speaker 2 15:50 Yeah. But even before this is Eve, I mean, so? So the spreadsheets could read Concord trade. It doesn't need to be mastered. So, remember, when I think it's more like Speaker 1 16:09 Molding your hyper booking with within your spreadsheet before you actually make the booking in being constant. Speaker 2 16:14 So, how this is still used? Yeah, yeah, pretty much Concord is an upgrade on the Eagle IR, right? So sales, or whoever books in Concord, send to the Trader Traders like, Speaker 1 16:28 Yeah, looks good, Speaker 2 16:29 Uh. And then, TAO balk approved in a different water. Speaker 3 16:43 Concord Concord lightning, right? Yeah.
+Speaker 2 16:45 And that's it. We write a name right until you call it Rich height, but they use Concord now. Or is algebra now? Right? The the back end. If you look at all the IDs, they're still going to qzr.blo, right? Because the TA blotter is still the same. Speaker 3 17:00 So, Speaker 2 17:01 In theory, Mrs, that's rtw rtw. Yeah, so Concord, we can forget, I believe Speaker 3 17:06 In theory. Yeah, yeah, it's like, a, uh, so still, the T Speaker 2 17:13 Approves in the bladder. Oh, so it creates an easier idea and the T is going when they say Trader says they go there and approve, and that approved trade goes. We're doing the bib. Yeah, we saw their product support is based on the default. Uh, rates for instruments that only caters to like things that are duller. Like, yeah, it's. It's a lot of work on their rates core instrument to be able to use it. And here, natively, we put a lot of hack into it to use the remember. They didn't have cross country. Yeah, even though it, it could just work now, he claims. Speaker 3 17:59 Yeah, Speaker 1 17:59 All of this is available now, by the way. Yeah, Speaker 2 18:02 I mean, this is like, you know, yeah, Speaker 1 18:05 This is, like, four years. Speaker 2 18:14 Time they didn't have it, right? So they, yeah, then we, we, we were asking, we we were asking, Gina, Speaker 1 18:19 Yeah, Speaker 2 18:19 So, and then they kind of sent out the tables at Matt, the guy. Then he quit, blah, blah. They all come. Speaker 1 18:33
+Available, and they're encouraging everyone to use fi for the bookings as well for pricing, as well as booking. Because effectively, if you tweak anything on the FI. It can rebuild the entire curve and its dependencies for you. So if they've done a lot of work on that side, so the beauty is like, Speaker 2 18:47 Like, just right where she. So if you're saying like you're, you can have a tag trade sell, saying, MTM, CCY, and you say, you have just minimal input and everything is templated, right? You're saying, oh, I want to do USD JPY. Speaker 3 18:59 That's all you Speaker 2 19:00 Gotta say. And what's your size? Based on the full template set, Speaker 3 19:10 And as Speaker 2 19:11 Long as the templates are maintained, Speaker 3 19:13 It's Speaker 2 19:13 Like, very easy way to. So, I mean, Speaker 3 19:16 Technically, how this runs like an engine or no, no, Speaker 1 19:19 It's just it just Speaker 2 19:20 Temples. Oh, okay. Now, one, Speaker 3 19:26 Uh, every time they price once it cash, it controls the template, I get it, I guess. Yeah, first time use, then it gets cash. Yeah. Speaker 1 19:44 It's the hash. Speaker 3 19:44 If you don't make
+Speaker 1 19:45 Any updates on your only rate pricing, it will pick it up from Speaker 3 19:48 Monday. No, okay, super. Speaker 2 19:49 Yeah, it is actually quite efficient. So, yeah. Anyway, when we were trying to do it, of course, you know, it didn't exist. So in in the modern day, it's a very good question to be had, like. We can use it here. I think we could with minimal tweaks. There will be small onboarding. Part in terms of getting the there. They do have some static on the Concord site. Like, who are War Traders, a bunch of tables that they built and keep in the center. But maybe, Speaker 1 20:16 Do we want to even report? Yeah, there's just no reason to go Concord Speaker 2 20:21 Workflows so, but right Speaker 1 20:23 Now, what is Concord used for? Is it us swaps? Speaker 2 20:25 Yeah, well, that's what we should say. Speaker 1 20:27 So, is this on the MLI set, Speaker 3 20:30 Um? Speaker 2 20:35 Because that's a blotter, right? The the water, it's Speaker 1 20:38 Lightning, is the plotto. Yeah, and then Concord is, like, the entry Speaker 2 20:42 It used to be the artery. Yeah, it used to be the RTW, right, Speaker 1 20:46 Okay? Or Speaker 2 20:46 You could, you could send, uh, pricing request? Concord idqcr.com code writing is like, actually, your pricing quiz in the Twitter could actually price in the spreadsheets, so those things are gone right. So, so
+Speaker 1 20:58 The pricing capability of Concord are like, move? Speaker 2 21:01 No, no something Speaker 1 21:02 Else, or it's still there. Speaker 2 21:03 Well, it will work if you want to try it. Speaker 1 21:07 Okay. Speaker 2 21:08 Right, like, or Taco, whatever, right? So their purpose is only for the tear to be able to approach, Speaker 1 21:20 Not Speaker 2 21:21 For the pricing part. Speaker 4 21:22 So T Speaker 2 21:24 Is using the race lighting to approve. So if they wanted to? Let's say, load a template and mandatory something, or like, or something, is not, they're not happy about it. They can use it, but I don't really see a practice. I mean, we can have a conversation with, uh, you know, time, right? Speaker 1 21:39 Yeah. So, because I just want to understand, like, from all the different Avenues that they can actually get trades into remaster. Speaker 2 21:45 Which ones are they Speaker 1 21:48 Using, and can, I mean, is there some different reasoning for using different applications? Speaker 4 21:52 Your product? Yes, Speaker 2 21:55 Of course, right now. For the US,
+Speaker 1 21:57 Yeah, what? The clients are not onboarded onto market fire, and we're not using single sided deals on Market wire, then concussions using USB. Oh, sorry, Speaker 2 22:13 Also equalizer in theory. Now, this is not Japan. Thing is an Australia thing more more of an Australia thing. Eagle IR can push trade to Market wiring. Is by ourselves. And if you remember, like, the double stub trade problem is coming from there, the reason is, it depends on the trader. Okay, so my son prefers using Eagle IR. She's been using it. Vmaster in theory can push a trade to Market bar. Okay, so does iglier? Designed since the master can push a trade to Market wire, Eagle IR can do it. Concord, can it really? Because it's just a fly if there is this flag that is? Market line. Will attempt to push it to Market one. That's it. It's a simple as that. Speaker 1 23:03 Is the reasoning to have if we are saying that we Masters our system of record and our like that is a truth system, right? Sure, what Speaker 2 23:10 Is the Speaker 1 23:10 Reason to push it back to multivirus? Speaker 2 23:11 Great question to make it bilateral, right? So, so now, we're talking about the Canadians. If you're a Trader, or if your sales is conveniently happy to use Eagle IR or maybe they priced it, you know, blah, blah? They're happy with the pricing, even though shit market data. Let's say you're happy with it. It is also Speaker 5 23:33 A translatable, simple booking view right now. Speaker 2 23:37 You've, you know, very basic amount of stuff, and then you put your book on and the STP to B master. And there are setups that have been done, such that if you pick a client, it will automatically know what interscribing Market by this into. Yeah, you don't need to know about any of it? You only need to do you need to know? Oh, you're doing this trade with the mura, uh, Tokyo Branch, right? And a story, and you priced it, and you pushed that into iglia from egler to MarketWare. It has the payload called as marketable interest group and all that. What is the clearing Nuance? You don't need to know all the relationship is defined. Uh, so. That is configured within the the B Master static data for each counterparty. So, once
+they enrich and they say send to Market wire, the trade that we're submitting to. Marketware now is a bilateral trade. The client can pick up, so this is to make the life easy for client. They don't have to book it, they just pick it. It's a voice trade. It's a voice training. Speaker 3 24:50 We muster or iglier or microwave. All three can be extend to client, so that's right, Speaker 2 24:54 Exactly. Yeah, so it is a preference of. And the client. The client wants to get a market wire, and if our death doesn't want to use multi-wife or whatever the reason to structure the trade chart. I Speaker 1 25:06 Think I kind of understand this, but just tell me if I did so effectively, either the client can put it into Market wire and then it flows into remaster or if we are sending the rfq or sending the deal to the client instead. If you can get it in Via Concord or Eagle IR or market wire. When it goes to be master or at any of those stages, we can put the center Master by your flag as true and then effectively. The client gets the bumper, Speaker 2 25:38 Yeah, so that they can Speaker 1 25:40 Book their side of it, Speaker 2 25:40 Correct the caviar being. When you're saying, Center Market War is true. You need to make sure that the client's onboarded, oh, and the setup, right? I Speaker 1 25:50 Mean, you wouldn't want to see. Yeah, the client does not on board it. Yeah, so Speaker 2 25:54 It's not like a magic ball like, so Speaker 3 25:56 You would automatic they can't cost. Speaker 2 26:04 Oh, okay, Speaker 1 26:05 I mean, they get a pop-up, and then they need to accept whatever, Speaker 3 26:10 Except Speaker 1 26:10
+Or ignore. I guess only when you Speaker 3 26:14 If isn't doing it in one in Marketplace, the other in, yeah. Desk level as something. In that case, Speaker 2 26:30 Sure, of course, but then they can also miss it. As we know from the other case, Speaker 3 26:33 Oh, but Speaker 2 26:34 That was the opposite direction, right? That's fine. And so, here's the thing. That's why, if you look at Traders, they only tell one TF they don't have a Crosshair Speaker 3 26:42 Or something, yes. Yeah, and Speaker 2 26:47 Also the sales are the one to one on each trade, right? It is when it's not, it's when it's not got it, and she's then dealing with TAP. So the chances of that happening on our desk, because look right, exactly, right? Chance. But yeah, you're right, except for the Concord part, which is only dollar, right. Speaker 3 27:12 The other stuff she doesn't. Frederick doesn't Speaker 2 27:17 Use. Yeah, well, it's only on the U.S here. The Speaker 3 27:23 Dollar is already using attribute, I believe. Speaker 2 27:25 Yeah, and? When you're saying Concord, we're talking about race fighting dude. Yeah, I gotta be careful about it. Yeah. Speaker 4 27:34 Let's put Concord another scope for now, because Speaker 2 27:36 Yeah, we're not talking about theme after retirement. So, assistant, yeah, that's true. Okay, yeah. So, yeah, our venue of Entry. We should say that it's rtw. Uh, Market wire. Um, iglier. Right, we're just talking about voice trade, right? And that's, that's it. And the master, if you really
+have to, I don't, anybody does it? Yeah, Speaker 1 28:06 And then I would imagine that if there is something that is in equal IR? Would have the capability to book in Via rtw. You don't need to use equal IR anymore unless there are some very specific intricacies for eagle iron see, I know some things are to do with, like user preference, because they're so used to it. Speaker 2 28:24 I would I think I would think that's a game, except obviously, I am. So here's the thing I know most of these systems, they said, Art. W, I haven't really used it. So, I haven't like, for example, I don't really know if rtw can pull the market wire client account. Speaker 3 28:47 On, send it back to your transcript Attacks and use copilot too. Yeah, we should generate its flowchart. Speaker 1 28:53 Do Speaker 6 28:54 It. Thank you so much already. Speaker 1 28:59 Can just replicate out again if you want. Speaker 2 29:01 No, but usually, you have to meet you there, um. Speaker 3 29:06 Okay, Speaker 2 29:06 Yeah, but that's like, um. We do have the capability degrees if you know in in terms of being able to use. Um, rtw, Speaker 3 29:21 Except unless like ego obviously has an Argo layer, which is a bunch. Some Speaker 2 29:27 Cables in the master. To say this client is mapped this interest group yada yada. This client is a client clearing. This client is a direct hearing. Find self-clearing and uses this Clearinghouse. You know, all of that configuration exists in the master, but is used by Argo. It's just for Argo. They don't have a database, so we kind of provide. Ability to set them. So, when a client is requesting the efig? Up or beyond order to do certain things. One part of the setup lives in those tables, so I'm not really sure. Yeah, but it's for Argo, which is the reference data service for ego. Oh, okay, so
+Speaker 3 30:09 The Argo is not for booking. It's interview Master Speaker 2 30:12 Well, Argo. Also from forms, the web service layer ego IR is the GUI right. Argo is the web service right, and so it is. Speaker 3 30:20 It's booking Speaker 1 30:22 Transport for booking, as well as your fetching of your static attack. Speaker 2 30:26 So, egoir talks. Speaker 3 30:32 Find your. It's like, TMS finder also talks to Argo. Speaker 2 30:36 Yeah, Speaker 3 30:36 I need Speaker 2 30:37 To talk to Margo to send to TSA to be mastered. Speaker 3 30:42 Yeah, Speaker 2 30:44 Yeah, that's true. That's true. Yeah, Speaker 1 30:45 Yeah, so, Speaker 2 30:46 Yeah, right, I mean, you know, by, from the BYB part that we just talked directly to TSA because we don't want intermediaries, right? Speaker 3 30:52 So RGW need to talk to, yeah? But Jason's demo was really custom for dollar swaps, right? So you'd pick a template and it works for all their specific. It doesn't support in Japan specific, for example. For example, if they book a cast for book and the books in Costa book, it can automatically book another trading cost seven, for example, and since sometimes when they book trade in some task books, it
+doesn't do the same behavior, so it's Speaker 1 31:25 Back-To-Back logic, is it? Yeah, Speaker 3 31:27 Yeah. Speaker 2 31:27 So, so you Speaker 3 31:28 See? Gavin, when where that happened. So they wanted to automate this flow. So when they put some specific books they took that template, I Speaker 1 31:42 Believe all the back-to-back Logics of book or counterparty driven in Israel, because yeah, I think some of the services that we also have from, like Sierra, to be Master for the funding field. Also, based on full counter party as well, even I, I can tell you about the Sierra site, right? Based on the counterparty that you choose, one counterparty would be the book and the other one would be like you, you. Speaker 3 32:09 It, and then you push it then. Yeah, Speaker 1 32:11 Okay, so I'm guessing even remaster has the back-to-back rules in a similar Speaker 2 32:15 Ways. Yes, V. Master has the IA rules into affiliate rules, and it's a bunch of combination of books. Which says, if a book comes from so and so entity, and if there's a rule they're affiliated for the intermediation entity, then the intermediation books are eventually replaced with the risk book from the configuration. Now, this is the contentious workflow that we're trying to fix for JCC, for example. Works well for, like, simple, step forward dollar, and all these guys do doesn't work for. Okay, Speaker 1 32:59 So effectively, you have a mapping like entity, one. Book one, then the matching risk book of it, and then the entity that the risk needs to be transferred to 100. Speaker 2 33:09 Yeah, exactly. Square entity, one entity here, and then book one book two. Yeah, this thing is exposed down the master static data page. We can might actually see hundreds of books there, so anybody can request your book to be added, and then what they want to replace it
+Speaker 1 33:26 Effectively. If this mapping exists and like? Condition for the entity, and the book gets hit. Speaker 2 33:34 Yeah, even if we Speaker 1 33:35 Want, even if we don't want, there will be a backpack that's strict. Speaker 2 33:38 So, is it, yes? So, no, this is the problem that we have at the JCC, where somebody refed a bunch of Trades unknowingly, and then we ended up with like a bunch of traits that we should now have. Speaker 1 33:51 There is a hidden rule that gets triggered. Speaker 3 33:53 It's Speaker 1 33:53 Going. Yeah, okay, Speaker 2 33:55 Because there's Speaker 1 33:56 No way Speaker 2 33:56 To stalker, right? So someone's just retreating refeeding. Oh, this is not right, we feel, hey, we. Should you want to give a head start, maybe we'll take time. Yeah, Speaker 6 34:03 Yeah, right, Speaker 2 34:04 Yeah, so you can give a head start we'll catch up. Speaker 6 34:06 Yeah, I still have maybe 10 minutes. So, uh, Speaker 2 34:11 So, yeah, so here's the thing. If somebody Speaker 1 34:13 You have a nice meeting,
+Speaker 6 34:14 No, just lunch, it's dark. Let's see Speaker 2 34:17 Somebody, uh, inadvertently thinks that. Speaker 6 34:25 Understand this. Okay, Speaker 2 34:26 Great support. Had a bad configuration, which says. Or trade control. Let's say they're looking at which dashboard it says. This trade is now paid, so let's say they have an option to replay the trick. The replay replay for some reason race dashboard is now getting a message right now. What's happening is all the trade? Replicate and replicate and replicate, so that's what happened. So, Speaker 1 34:48 The second infinite Loop? Speaker 2 34:49 Well, there are certain controls in Iowas that says, what is the final leg? Somebody is booking that again. Without completing the workflow, there is a chance that you could go out of control when I was like 40 seconds, right? Yeah, so IE is a very dangerous game dollar workflates. Okay, we're trying to kill some of it, and I think, is that Speaker 1 35:11 A, um? Is there a currency thing also? Yeah, Speaker 2 35:15 Uh, in this map, Speaker 1 35:17 Because how would you? Uh, yeah, how would you know because the book can post deals of all different currencies, right? Maybe you don't want to do the back-to-back when it is not hitting a particular country condition or something correct. It Speaker 2 35:30 Is even configured more granular currency, Eastern product, uh, Clearing House. By default is tried currency already, Speaker 1 35:41 But you can use you can have a multi-currency book as well, right? Yeah. Speaker 2 35:47 Who try not to do that these days, but there are small trading or units which you know
+Speaker 6 35:51 The Speaker 4 35:53 Whole existing issue with the intermediation, like getting generated like seven of them or whatnot in between. That's a game master issue, or people who's not going to be able to solve it, but the RT they'll be fine, Speaker 1 36:03 Even if we are sending to be Master. We might cause the same issue. Speaker 4 36:11 We are on generating. Yeah, when rkw could help would be the bladder viewers, we got a side by side view, then at least they wouldn't be able to catch that discrepancy right now. We don't have that, so that's I think the key part that you know, we want to have, or the folks downstairs are expecting from the water as well, Speaker 2 36:27 Also, right? Yeah, I Speaker 4 36:29 Mean, Speaker 2 36:29 I'm guessing Palinosis. I mean, it's way about pretty good, but I'm pretty sure Kelly knows is. Interaffiliation in general is frowned upon, right? The you're not supposed to do those. Like, you're only supposed to risk trade. So, if you want to trade ml.js, you have an images book. If you want to trade MLI, you have an MLI. What is your Speaker 3 36:53 Translation, Speaker 2 36:53 So either intermediation? Remember when you have an intermediation book? Yeah, right, your risk book, and then two, yeah, two intermination, but so that is dummy okay. Like, what Speaker 1 37:05 Spoke, right? Yeah, Speaker 2 37:06 Okay, Speaker 1 37:07 So different conventions, same thing, same thing. Speaker 2 37:08
+The that is dummy, uh? Entity pairs. It's okay. These are quite strict. After the dark Frank, and it's all the banner entities, and there's rituals, ml entities have very loose rules. So, what people still want to do the business, right? So, what they do? So, let's say you're a Banner, Charlotte. Now, you, you want to do an MLI phasing client. What do you do you still book that, um, life facing from Banner? You're tough. Whatever toss is about a move right or cusport you do from cost four, so you will use an intermediation book to book the original trip. Now, when it clears what you do, you break the trade apart. Remember, you have two legs now. In some intermediation book, you resubmit those trades back to Market wire. And the other one is going to have the final counterbody. Oh, as a client saying Speaker 1 38:05 Solid against Bana, yeah, and then Bana against. Yeah, Speaker 6 38:10 So Speaker 2 38:14 Now you're using. I'm Speaker 6 38:16 Going to, uh, Speaker 2 38:18 The beauty is now. You're not violating a rule which is, don't use intermediation book! You have it in a risk book, but the risk book is flat because you got two legs, right? Yeah, Speaker 6 38:29 Yeah. Oh, okay, so it's all similar. Yeah, it's very, Speaker 1 38:41 Very similar here Speaker 4 38:43 In between as well. For this case scenario, heading even further legs, Speaker 1 38:48 So I Speaker 6 38:49 Used to wonder why they used to do it. Now, I get it. Speaker 2 38:51 Yeah, so the the some, yeah. So, this
+Speaker 4 38:54 Issue is doing a um work working group front and back, trying to see if they can simplify the booking flow. Remember, um? Legal, and what are the evidence data that needs to be retained and right, you know, that kind of thing right now? We only have the booking in the master. As of this, but frankly, for equities, cash flows, and whatnot, there they have that and then stored in other, more Downstream apps, whatnot. So, it's there's some discussions ongoing on that, and but we had a meeting with Venezuela because this is going to go under his remedy. Speaker 1 39:34 Yeah, right, so that Speaker 4 39:35 Whole booking flow issue of being after? Justin being worked on to see if it can result, Speaker 2 39:45 But that's Speaker 4 39:46 All the more reason why they need that kind of bother you. Speaker 1 39:50 Understood. Okay. I know that we like super overrun because we are still trying to learn Speaker 7 39:57 Things. Speaker 4 40:00 Yeah. Speaker 1 40:03 I think we can chat later. Maybe if we have some time after lunch, of course, for the how to connect the electronic flow as well. Speaker 2 40:10 Yeah, they're not simpler, but yeah, Speaker 4 40:12 I was talking about this. I'll see if he can show you what he should. Yeah, so I think that would be helpful to get you to visualize what they're doing. And Speaker 2 40:20 Also, let's also chat about Utah. He's really chill, right? William is asking, hey, what's your use of Concord
+Speaker 3 40:27 Marine Speaker 1 40:28 Who's using Concord? Speaker 2 40:29 I mean, Utah, we can ask you, Speaker 1 40:31 Oh yeah, yeah, he's Speaker 2 40:33 He's. Speaker 4 40:40 Yeah, that's the other one that U.S treasuries is using, right? Yeah, Speaker 2 40:49 So Speaker 4 40:49 The plotter, dude, yeah, Speaker 2 40:51 No, no, no, you're talking about the broker TV. No Speaker 1 40:55 Broken TV is for the allocations. Speaker 8 40:56 That's funny. Yeah, yeah, right, yeah, yeah, yeah. So, yeah. Speaker 2 40:59 Do you have the swabs? Do you think you remember that shit? Yeah, exactly. We should, in my opinion, we should try to simplify the flow for. Australia has a little bit like, yeah, when I talk to you, then I realized they do send trades. To Market wire, maybe more than my son using employart, right? So, that's a good use case. And when we're doing activity, we've got to know that that capabilities retained, right? We cannot just keep them. Hey here, you go. Use rtw and it's, like, oh well, you can also enjoy to Market. Why? More, like? Not going to be fun. Speaker 3 41:54 But once it looks into business, Speaker 2 41:56
+Yeah. But then, who's gonna do the enrichment, right? Someone's gonna do the enrichment? Based on some input. Right, whoever initiated sales or Trader? I mean, ideally, not the Trader, right? But It should have said at some point that I intend to send this to Market. Why not? Speaker 3 42:16 Honestly, Speaker 6 42:17 Yeah, plan anything. Want to. That's why I'm going to check to see what blazing emails Speaker 4 42:24 I'm like, Speaker 6 42:24 Because Speaker 4 42:26 Kali is, Speaker 6 42:26 If you're free to join. Now, we plan to go for lunch together. Speaker 2 42:30 If you fancy, Speaker 4 42:32 Where are you going? Speaker 6 42:36 You come here around 12 Speaker 8 42:43 30. You're gonna walk the Falafel, or Speaker 6 42:46 Oh, we'll walk to Philadelphia. Take the train, you know, and it's too hard to come back, so Speaker 8 42:51 The place is gonna be falafelda. Speaker 6 42:53 Yeah, I mean, yes, um, Speaker 1 42:54 Two guys like that place. Yeah, let's go. Let's go, let's go.
 
-# Function to create a "3D" QR code effect directly in the PDF using ReportLab
-def draw_3d_qr_code(pdf, qr_code_data, x, y, size):
-    # Create the QR code
-    qr_code = qr.QrCodeWidget(qr_code_data)
-    
-    # Set QR code size
-    bounds = qr_code.getBounds()
-    width = bounds[2] - bounds[0]
-    height = bounds[3] - bounds[1]
-    
-    # Scale the QR code to the desired size
-    d = Drawing(size, size, transform=[size/width,0,0,size/height,0,0])
-    d.add(qr_code)
-    
-    # Draw shadow for 3D effect by shifting the QR code slightly
-    shadow_offset = 2 * mm
-    d_shadow = Drawing(size, size, transform=[size/width,0,0,size/height,shadow_offset, -shadow_offset])
-    d_shadow.add(qr_code)
-    
-    # Draw the shadow first (in gray)
-    pdf.setFillColor(gray)
-    d_shadow.drawOn(pdf, x, y)
-    
-    # Draw the main QR code (in black) on top of the shadow
-    pdf.setFillColor(black)
-    d.drawOn(pdf, x, y)
-
-# Define the text with 3000 characters
-qr_code_data = "This is an example of a long text " * 75  # 3000 characters in total
-
-# Create a PDF canvas
-pdf_filename = "3d_qr_code_reportlab.pdf"
-pdf = canvas.Canvas(pdf_filename)
-
-# Define the position and size of the QR code in the PDF
-qr_x = 50 * mm
-qr_y = 150 * mm
-qr_size = 80 * mm  # This sets both the width and height of the QR code
-
-# Draw the 3D QR code on the PDF
-draw_3d_qr_code(pdf, qr_code_data, qr_x, qr_y, qr_size)
-
-# Save the PDF
-pdf.save()
-
-print(f"3D QR code saved to {pdf_filename}")
-
-from reportlab.pdfgen import canvas
-from reportlab.graphics.barcode import code128
-from reportlab.lib.units import mm
-from reportlab.lib.colors import black, gray
-
-def draw_3d_barcode(pdf, barcode_text, x, y, width, height):
-    # Generate the barcode
-    barcode = code128.Code128(barcode_text, barWidth=width / 100.0, barHeight=height)
-    
-    # Create a "shadow" to mimic 3D by drawing the barcode slightly offset
-    shadow_offset = 1 * mm
-    barcode.drawOn(pdf, x + shadow_offset, y - shadow_offset)
-    
-    # Draw the main barcode in black
-    pdf.setFillColor(black)
-    barcode.drawOn(pdf, x, y)
-
-# Create PDF canvas
-pdf_filename = "3d_barcode.pdf"
-pdf = canvas.Canvas(pdf_filename)
-
-# Define barcode parameters
-barcode_text = "3D1234567890"
-barcode_x = 50 * mm
-barcode_y = 150 * mm
-barcode_width = 40 * mm
-barcode_height = 20 * mm
-
-# Set shadow color
-pdf.setFillColor(gray)
-draw_3d_barcode(pdf, barcode_text, barcode_x, barcode_y, barcode_width, barcode_height)
-
-# Save the PDF
-pdf.save()
-
-print(f"3D barcode saved to {pdf_filename}")
-
-# git-essentials
-#!/bin/ksh
-
-# Check if LOGFILE variable is set
-if [[ -z "$LOGFILE" ]]; then
-    echo "LOGFILE variable is not set."
-    exit 1
-fi
-
-# Check for the existence of the file
-if [[ ! -e "$LOGFILE" ]]; then
-    touch "$LOGFILE"
-    if [[ $? -ne 0 ]]; then
-        echo "Error creating $LOGFILE."
-        exit 2
-    fi
-    chmod 666 "$LOGFILE"
-    if [[ $? -ne 0 ]]; then
-        echo "Error setting permissions for $LOGFILE."
-        exit 3
-    fi
-    echo "$LOGFILE created with 666 permissions."
-else
-    echo "$LOGFILE already exists."
-fi
-
-exit 0
-
-----------------------------------------------
-# Define a Secure AES Key
-$secureKey = 'YOUR_32_BYTE_AES_KEY_HERE' # Replace this with your 32-byte key
-
-# Encrypt the Password
-$encryptedPassword = ConvertTo-SecureString 'MySecretPassword' -AsPlainText -Force | ConvertFrom-SecureString -Key ([byte[]] [char[]] $secureKey)
-
-# Decrypt the Password
-$decryptedPassword = ConvertTo-SecureString -String $encryptedPassword -Key ([byte[]] [char[]] $secureKey) | ForEach-Object { [Runtime.InteropServices.Marshal]::PtrToStringAuto([Runtime.InteropServices.Marshal]::SecureStringToBSTR($_)) }
-
-Write-Host "Encrypted Password: $encryptedPassword"
-Write-Host "Decrypted Password: $decryptedPassword"
-----------------------------------------------
-
-# Define AES Key and IV
-$key = [System.Text.Encoding]::UTF8.GetBytes("YOUR_32_BYTE_AES_KEY_HERE") # Replace this with your 32-byte key
-$IV = [System.Text.Encoding]::UTF8.GetBytes("YOUR_16_BYTE_IV_HERE")       # Replace this with your 16-byte IV
-
-# Function to encrypt a string using the AES key and IV
-function Encrypt-String($stringToEncrypt) {
-    $aes = New-Object System.Security.Cryptography.AesCryptoServiceProvider
-    $aes.Key = $key
-    $aes.IV = $IV
-    $encryptor = $aes.CreateEncryptor()
-
-    $stringBytes = [System.Text.Encoding]::UTF8.GetBytes($stringToEncrypt)
-    $encryptedBytes = $encryptor.TransformFinalBlock($stringBytes, 0, $stringBytes.Length)
-    return [Convert]::ToBase64String($encryptedBytes)
-}
-
-# Function to decrypt a string using the AES key and IV
-function Decrypt-String($encryptedString) {
-    $aes = New-Object System.Security.Cryptography.AesCryptoServiceProvider
-    $aes.Key = $key
-    $aes.IV = $IV
-    $decryptor = $aes.CreateDecryptor()
-
-    $encryptedBytes = [Convert]::FromBase64String($encryptedString)
-    $decryptedBytes = $decryptor.TransformFinalBlock($encryptedBytes, 0, $encryptedBytes.Length)
-    return [System.Text.Encoding]::UTF8.GetString($decryptedBytes)
-}
-
-# Test
-$plainText = "MySecretPassword"
-$encryptedText = Encrypt-String -stringToEncrypt $plainText
-$decryptedText = Decrypt-String -encryptedString $encryptedText
-
-Write-Host "Original Text: $plainText"
-Write-Host "Encrypted Text: $encryptedText"
-Write-Host "Decrypted Text: $decryptedText"
-
-
-===================================
-#public key is in OpenSSH format (begins with something like 'ssh-rsa', 'ssh-dss', etc.), you can use the load_ssh_public_key method. 
-from cryptography.hazmat.primitives.serialization import load_ssh_public_key
-from cryptography.hazmat.primitives import serialization
-from cryptography.hazmat.backends import default_backend
-
-def get_ssh_public_key_fingerprint(public_key_str):
-    try:
-        # Load the public key from the string
-        public_key = load_ssh_public_key(public_key_str.encode(), backend=default_backend())
-
-        # Serialize the public key to bytes
-        public_bytes = public_key.public_bytes(
-            encoding=serialization.Encoding.OpenSSH,
-            format=serialization.PublicFormat.OpenSSH
-        )
-
-        # Calculate the fingerprint
-        fingerprint_bytes = hashlib.md5(public_bytes).digest()
-
-        # Convert the fingerprint to a hexadecimal string
-        fingerprint_hex = ':'.join(format(b, '02x') for b in fingerprint_bytes)
-        return fingerprint_hex
-
-    except ValueError as e:
-        # Handle the case where the string is not a valid public key
-        print(f"Error parsing public key: {str(e)}")
-        return None
-
-# Your public key string here; it should be a single line and start with 'ssh-rsa', 'ssh-dss', etc.
-public_key_str = """ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC..."""
-
-fingerprint = get_ssh_public_key_fingerprint(public_key_str)
-if fingerprint:
-    print(f'Fingerprint: {fingerprint}')
-else:
-    print('Failed to generate fingerprint.')
-
-=============================
-#!/bin/bash
-
-# Path to the authorized_keys file
-AUTHORIZED_KEYS_FILE="/path/to/authorized_keys"
-
-# Temporary file for individual keys
-TEMP_KEY_FILE=$(mktemp)
-
-# Ensure the temporary file is deleted upon script exit
-trap "rm -f $TEMP_KEY_FILE" EXIT
-
-# Read the authorized_keys file line by line
-while IFS= read -r line; do
-    # Skip empty lines or comments
-    if [[ "$line" =~ ^$ ]] || [[ "$line" =~ ^# ]]; then
-        continue
-    fi
-
-    # Write the key to the temporary file
-    echo "$line" > "$TEMP_KEY_FILE"
-
-    # Get the fingerprint using ssh-keygen
-    ssh-keygen -l -f "$TEMP_KEY_FILE"
-done < "$AUTHORIZED_KEYS_FILE"
-
-
-
-
-
-
+NotebookLM can be inaccurate; please double check its responses.
